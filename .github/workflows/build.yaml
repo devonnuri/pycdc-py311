@@ -15,7 +15,7 @@ jobs:
 
       - name: Compile
         run: >
-          cd pycdc
+          cd pycdc-py311
           
           echo "RELEASE_COMMIT=$(git log -1 --format=%h)" >> ${GITHUB_ENV}
           cmake -DCMAKE_SYSTEM_NAME=Windows
